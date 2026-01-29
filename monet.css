@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background-color: #e6dbc4;
+    color: #333;
+}
+
+.hero {
+    height: 70vh;
+    background: url("monet_claude.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 30px 50px;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.identificacio {
+    max-width: 900px;
+    margin: 60px auto 40px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.identificacio p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.identificacio h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    border-bottom: 3px solid #bfa76f;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.galeria img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.obra {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: z-index 0.2s;
+}
+
+
+.obra img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 4px;
+}
+
+
+.obra:hover {
+    z-index: 20;
+}
+
+.obra:hover img {
+    transform: scale(1.8);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.45);
+}
+
+.obra h3 {
+    margin-top: 8px;
+    font-size: 1rem;
+    background: transparent;
+    color: #333;
+}
+
